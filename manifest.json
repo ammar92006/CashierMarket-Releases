@@ -2,7 +2,98 @@
     "$schema":  "https://schema.cashiermarket.com/update/v1/manifest.schema.json",
     "schema_version":  "1.0.0",
     "manifest_id":  "cm-rel-v1.0.1.0-stable",
-    "generated_at":  "2026-11-16T17:29:58Z",
+    "product":  "cashiermarket-pos",
+    "version":  "1.0.1.0",
+    "build_number":  "20261116.1",
+    "channel":  "stable",
+    "mandatory":  false,
+    "title":  "تحديث كاشير ماركت (Cashier Market POS \u0026 ERP) v1.0.1.0",
+    "release_date":  "2026-11-16T17:16:00Z",
+    "previous_version":  "1.0.0.9",
+    "min_version_to_update":  "1.0.0.0",
+    "package":  {
+                    "type":  "differential_delta",
+                    "name":  "CashierMarket_Delta_v1.0.0.9_to_v1.0.1.0.zip",
+                    "url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/CashierMarket_Delta_v1.0.0.9_to_v1.0.1.0.zip",
+                    "sha256":  "c7e8fd0dab1ef84eb75d3f2f5ffd2625aa90636e9f42cee6e0f43ace7c13d202",
+                    "size":  87504858,
+                    "size_human":  "83.45 MB",
+                    "runner":  "apply_cashier_delta.bat",
+                    "install_strategy":  "stage_and_replace",
+                    "requires_restart":  true
+                },
+    "installer":  {
+                      "type":  "full_setup",
+                      "name":  "CashierMarket_Setup_v1.0.1.0.exe",
+                      "url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/CashierMarket_Setup_v1.0.1.0.exe",
+                      "sha256":  "55f626210436f42922ba07c6ab26d385710d62ff507c4e3d20a54108ce461b5b",
+                      "size":  93220312,
+                      "size_human":  "88.9 MB",
+                      "silent_args":  "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-",
+                      "requires_admin":  true
+                  },
+    "whats_new":  [
+                      "✨ ترقية أداء نقطة البيع وتسريع البحث وقراءة الباركود المتتابع بنسبة تفوق 40%.",
+                      "⚡ تحديثات فروقية ذكية (Delta Updates) لتنزيل الملفات المتغيرة فقط بحجم خفيف جداً واستبدالها تلقائياً.",
+                      "🛡️ منظومة حماية وتراخيص هجينة: ربط العتاد (HWID)، تشفير عسكري (AES-256)، ومهلة سماح 14 يوماً بدون إنترنت.",
+                      "📶 دعم التفعيل الأوفلاين للأجهزة المعزولة بدون إنترنت.",
+                      "🎨 ضبط الهوية البصرية الرسمية الخضراء وتناسق كامل للشاشات بالوضعين الفاتح والداكن.",
+                      "🛠️ تعزيز دقة الرقابة المالية في الخزينة ومنع أي سحب يتجاوز الرصيد النقدي الفعلي."
+                  ],
+    "channels":  {
+                     "active_channel":  "stable",
+                     "default_channel":  "stable",
+                     "client_config_key":  "update_channel",
+                     "supported_channels":  [
+                                                "stable",
+                                                "beta",
+                                                "preview"
+                                            ],
+                     "directory":  {
+                                       "stable":  {
+                                                      "channel_id":  "stable",
+                                                      "name_ar":  "القناة المستقرة الرسمية",
+                                                      "name_en":  "Official Stable Channel",
+                                                      "is_recommended":  true,
+                                                      "latest_version":  "1.0.1.0",
+                                                      "release_tag":  "v1.0.1.0",
+                                                      "status":  "production-ready",
+                                                      "description_ar":  "النسخ الرسمية المستقرة والمجربة لجميع الأنشطة التجارية ونقاط البيع اليومية.",
+                                                      "description_en":  "Production-grade, highly tested releases recommended for daily operations.",
+                                                      "manifest_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/manifest.json",
+                                                      "package_download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/CashierMarket_Delta_v1.0.0.9_to_v1.0.1.0.zip",
+                                                      "installer_download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/CashierMarket_Setup_v1.0.1.0.exe"
+                                                  },
+                                       "beta":  {
+                                                    "channel_id":  "beta",
+                                                    "name_ar":  "القناة التجريبية العامة",
+                                                    "name_en":  "Public Beta Channel",
+                                                    "is_recommended":  false,
+                                                    "latest_version":  "1.0.1.0",
+                                                    "release_tag":  "v1.0.1.0",
+                                                    "status":  "testing",
+                                                    "description_ar":  "نسخ تجريبية تتضمن المميزات الجديدة قبل اعتمادها رسمياً، موجهة للمختبرين والمستخدمين الراغبين بالمزايا المبكرة.",
+                                                    "description_en":  "Pre-release builds featuring upcoming tools for early testers.",
+                                                    "manifest_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/manifest.json",
+                                                    "package_download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/CashierMarket_Delta_v1.0.0.9_to_v1.0.1.0.zip",
+                                                    "installer_download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/CashierMarket_Setup_v1.0.1.0.exe"
+                                                },
+                                       "preview":  {
+                                                       "channel_id":  "preview",
+                                                       "name_ar":  "قناة المعاينة والتطوير",
+                                                       "name_en":  "Developer Preview Channel",
+                                                       "is_recommended":  false,
+                                                       "latest_version":  "1.0.1.0",
+                                                       "release_tag":  "v1.0.1.0",
+                                                       "status":  "experimental",
+                                                       "description_ar":  "بناءات معاينة سريعة تتضمن تحديثات قيد التطوير المباشر.",
+                                                       "description_en":  "Experimental bleeding-edge builds for developers and QA engineers.",
+                                                       "manifest_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/manifest.json",
+                                                       "package_download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/CashierMarket_Delta_v1.0.0.9_to_v1.0.1.0.zip",
+                                                       "installer_download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/CashierMarket_Setup_v1.0.1.0.exe"
+                                                   }
+                                   }
+                 },
     "application":  {
                         "id":  "com.cashiermarket.pos",
                         "name":  "Cashier Market POS \u0026 ERP",
@@ -11,85 +102,18 @@
                         "main_executable":  "Cashier Market.exe",
                         "website":  "https://github.com/ammar92006/CashierMarket-Releases"
                     },
-    "release":  {
-                    "version":  "1.0.1.0",
-                    "build_number":  "20261116.1",
-                    "channel":  "stable",
-                    "release_type":  "minor",
-                    "released_at":  "2026-11-16T17:29:58Z",
-                    "is_mandatory":  false,
-                    "min_supported_version":  "1.0.0.0",
-                    "previous_version":  "1.0.0.9",
-                    "compatibility":  {
-                                          "os":  "Windows",
-                                          "min_windows_build":  "10.0.17763",
-                                          "architecture":  "Any CPU (x86/x64)",
-                                          "dotnet_runtime":  ".NET Framework 4.8"
-                                      }
-                },
-    "release_notes":  {
-                          "ar":  {
-                                     "title":  "تحديث كاشير ماركت الإصدار v1.0.1.0",
-                                     "summary":  "إصدار رسمي يتضمن التحديثات الفروقية الذكية وتحسينات الأداء والتراخيص.",
-                                     "highlights":  [
-                                                        "✨ ترقية أداء نقطة البيع وتسريع البحث وقراءة الباركود المتتابع بنسبة تفوق 40%.",
-                                                        "⚡ تحديث فروقي سريع وخفيف الحجم للملفات المتغيرة فقط دون الحاجة لتنزيل البرنامج كاملاً.",
-                                                        "🎨 ضبط الهوية البصرية الرسمية الخضراء وتناسق كامل للشاشات بالوضعين الفاتح والداكن.",
-                                                        "🛠️ تعزيز دقة الرقابة المالية في الخزينة ومنع أي سحب يتجاوز الرصيد النقدي الفعلي."
-                                                    ]
-                                 },
-                          "en":  {
-                                     "title":  "Cashier Market Release v1.0.1.0",
-                                     "summary":  "Official release featuring smart differential updates, performance boosts, and cloud licensing.",
-                                     "highlights":  [
-                                                        "Smart Differential (Delta) updates: download only changed files.",
-                                                        "Hardware-bound licensing (HWID) with AES-256 local encrypted cache and 14-day offline grace period.",
-                                                        "Offline license code verification for air-gapped computers.",
-                                                        "Over 40% speedup in sequential barcode scanning and product lookups."
-                                                    ]
-                                 }
+    "compatibility":  {
+                          "os":  "Windows",
+                          "min_windows_build":  "10.0.17763",
+                          "architecture":  "Any CPU (x86/x64)",
+                          "dotnet_runtime":  ".NET Framework 4.8"
                       },
-    "artifacts":  {
-                      "delta":  {
-                                    "type":  "differential_delta",
-                                    "format":  "zip",
-                                    "file_name":  "CashierMarket_Delta_v1.0.0.9_to_v1.0.1.0.zip",
-                                    "download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/CashierMarket_Delta_v1.0.0.9_to_v1.0.1.0.zip",
-                                    "from_version":  "1.0.0.9",
-                                    "to_version":  "1.0.1.0",
-                                    "size_bytes":  87504858,
-                                    "size_human":  "83.45 MB",
-                                    "hashes":  {
-                                                   "sha256":  "c7e8fd0dab1ef84eb75d3f2f5ffd2625aa90636e9f42cee6e0f43ace7c13d202"
-                                               },
-                                    "install_strategy":  "stage_and_replace",
-                                    "runner":  "apply_cashier_delta.bat",
-                                    "requires_restart":  true
-                                },
-                      "full":  {
-                                   "type":  "standalone_installer",
-                                   "format":  "inno_setup_exe",
-                                   "file_name":  "CashierMarket_Setup_v1.0.1.0.exe",
-                                   "download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/CashierMarket_Setup_v1.0.1.0.exe",
-                                   "size_bytes":  93220312,
-                                   "size_human":  "88.9 MB",
-                                   "hashes":  {
-                                                  "sha256":  "55f626210436f42922ba07c6ab26d385710d62ff507c4e3d20a54108ce461b5b"
-                                              },
-                                   "install_flags":  "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-",
-                                   "requires_admin":  true
-                               }
-                  },
     "distribution":  {
                          "github_repository":  "https://github.com/ammar92006/CashierMarket-Releases",
                          "github_release_tag":  "v1.0.1.0",
                          "manifest_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/manifest.json",
-                         "channels":  [
-                                          "stable",
-                                          "beta",
-                                          "preview"
-                                      ],
-                         "default_channel":  "stable"
+                         "supabase_project_url":  "https://psxgumzygqfbqbwtweee.supabase.co",
+                         "supabase_rpc_method":  "rpc_check_for_updates"
                      },
     "security":  {
                      "integrity_hash_algorithm":  "SHA-256",
