@@ -1,0 +1,107 @@
+{
+    "$schema":  "https://schema.cashiermarket.com/update/v1/manifest.schema.json",
+    "schema_version":  "1.0.0",
+    "manifest_id":  "cm-rel-v1.0.1.0-stable",
+    "generated_at":  "2026-11-16T17:26:26Z",
+    "application":  {
+                        "id":  "com.cashiermarket.pos",
+                        "name":  "Cashier Market POS \u0026 ERP",
+                        "edition":  "Professional POS \u0026 Retail ERP",
+                        "publisher":  "Cashier Market Software Systems",
+                        "main_executable":  "Cashier Market.exe",
+                        "website":  "https://github.com/ammar92006/CashierMarket-Releases"
+                    },
+    "release":  {
+                    "version":  "1.0.1.0",
+                    "build_number":  "20261116.1",
+                    "channel":  "stable",
+                    "release_type":  "minor",
+                    "released_at":  "2026-11-16T17:16:00Z",
+                    "is_mandatory":  false,
+                    "min_supported_version":  "1.0.0.0",
+                    "previous_version":  "1.0.0.9",
+                    "compatibility":  {
+                                          "os":  "Windows",
+                                          "min_windows_build":  "10.0.17763",
+                                          "architecture":  "Any CPU (x86/x64)",
+                                          "dotnet_runtime":  ".NET Framework 4.8"
+                                      }
+                },
+    "release_notes":  {
+                          "ar":  {
+                                     "title":  "ترقية أداء نقطة البيع وتسريع البحث ودعم التحديث الفروقي الذكي",
+                                     "summary":  "إصدار يركز على الكفاءة القصوى، تقليل حجم التحديثات عبر التحديث الفروقي، وضبط التراخيص السحابية.",
+                                     "highlights":  [
+                                                        "⚡ تحديثات فروقية ذكية (Delta Updates) لتنزيل الملفات المتغيرة فقط بحجم خفيف جداً.",
+                                                        "🛡️ منظومة حماية وتراخيص هجينة (ربط العتاد HWID، تشفير AES-256، مهلة سماح 14 يوماً).",
+                                                        "📶 تفعيل أوفلاين للأجهزة المعزولة بدون إنترنت.",
+                                                        "🚀 تسريع قراءة الباركود المتتابع وعمليات البحث بنسبة تفوق 40%.",
+                                                        "🎨 تناسق الهوية البصرية الزمردية في الوضعين الفاتح والداكن."
+                                                    ],
+                                     "changes":  [
+                                                     "إضافة فحص تلقائي للتراخيص بالخلفية كل 30 دقيقة مع إمكانية التجميد والإلغاء عن بُعد.",
+                                                     "إضافة نافذة تحديث احترافية مخصصة تعرض تفاصيل الإصدار وشريط التقدم.",
+                                                     "إضافة سكريبت تثبيت الفروقات التلقائي apply_cashier_delta.bat واستبدال الملفات بأمان."
+                                                 ]
+                                 },
+                          "en":  {
+                                     "title":  "POS Performance Boost, Smart Delta Updates \u0026 Cloud Licensing",
+                                     "summary":  "Major upgrade introducing differential delta updates, hardware-bound licensing, and POS barcode acceleration.",
+                                     "highlights":  [
+                                                        "Smart Differential (Delta) updates: download only changed files.",
+                                                        "Hardware-bound licensing (HWID) with AES-256 local encrypted cache and 14-day offline grace period.",
+                                                        "Offline license code verification for air-gapped computers.",
+                                                        "Over 40% speedup in sequential barcode scanning and product lookups.",
+                                                        "Unified emerald branding with polished dark/light themes."
+                                                    ]
+                                 }
+                      },
+    "artifacts":  {
+                      "delta":  {
+                                    "type":  "differential_delta",
+                                    "format":  "zip",
+                                    "file_name":  "CashierMarket_Delta_v1.0.0.9_to_v1.0.1.0.zip",
+                                    "download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/CashierMarket_Delta_v1.0.0.9_to_v1.0.1.0.zip",
+                                    "from_version":  "1.0.0.9",
+                                    "to_version":  "1.0.1.0",
+                                    "size_bytes":  87462047,
+                                    "size_human":  "83.4 MB",
+                                    "hashes":  {
+                                                   "sha256":  "87f1f5a0d5533dc1a944238b82a366fdb878e0fa41f2efbbb90b1402f0310a88"
+                                               },
+                                    "install_strategy":  "stage_and_replace",
+                                    "runner":  "apply_cashier_delta.bat",
+                                    "requires_restart":  true
+                                },
+                      "full":  {
+                                   "type":  "standalone_installer",
+                                   "format":  "inno_setup_exe",
+                                   "file_name":  "CashierMarket_Setup_v1.0.1.0.exe",
+                                   "download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.1.0/CashierMarket_Setup_v1.0.1.0.exe",
+                                   "size_bytes":  93175943,
+                                   "size_human":  "88.8 MB",
+                                   "hashes":  {
+                                                  "sha256":  "cbf53b2d7dce52ada9109b7704e3c3e0deb4d399b8e8baaf527ec4c7711fce68"
+                                              },
+                                   "install_flags":  "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-",
+                                   "requires_admin":  true
+                               }
+                  },
+    "distribution":  {
+                         "github_repository":  "https://github.com/ammar92006/CashierMarket-Releases",
+                         "github_release_tag":  "v1.0.1.0",
+                         "github_release_id":  447351030,
+                         "supabase_project_url":  "https://psxgumzygqfbqbwtweee.supabase.co",
+                         "channels":  [
+                                          "stable",
+                                          "beta",
+                                          "preview"
+                                      ],
+                         "default_channel":  "stable"
+                     },
+    "security":  {
+                     "integrity_hash_algorithm":  "SHA-256",
+                     "cloud_rpc_validation":  "rpc_check_for_updates",
+                     "signature_verification":  "enabled"
+                 }
+}
