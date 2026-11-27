@@ -1,58 +1,136 @@
 {
     "$schema":  "https://schema.cashiermarket.com/update/v1/manifest.schema.json",
     "schema_version":  "1.0.0",
-    "manifest_id":  "cm-rel-v1.0.2.1-stable",
+    "manifest_id":  "cm-rel-v1.0.2.3-stable",
     "product":  "cashiermarket",
-    "version":  "1.0.2.1",
+    "version":  "1.0.2.3",
     "hotfix_revision":  1,
-    "build_number":  "20261122.1",
+    "build_number":  "20261127.1",
     "channel":  "stable",
     "mandatory":  false,
     "rollout_percentage":  100,
-    "title":  "تحديث كاشير ماركت (Cashier Market POS \u0026 ERP) v1.0.2.1",
-    "release_date":  "2026-11-23T00:36:01Z",
-    "previous_version":  "1.0.2.0",
-    "min_version_to_update":  "1.0.0.0",
+    "title":  "تحديث كاشير ماركت (Cashier Market POS \u0026 ERP) v1.0.2.3",
+    "release_date":  "2026-11-27T16:48:38Z",
+    "previous_version":  "1.0.2.2",
+    "min_version_to_update":  "0.0.0.0",
+    "notes":  "• 🎨 تطوير شاشة تسجيل الدخول والشاشة الرئيسية لتصبح أسرع وأكثر سلاسة وتناسقاً على جميع مقاسات الشاشات\n• ✨ تحسين نافذة عرض التحديثات الجديدة وتجربة متابعة الإشعارات والتنبيهات الفورية\n• ✨ تطوير شاشة الكاشير وفاتورة البيع لسرعة أكبر أثناء أوقات الزحام\n• ✨ نظام تنبيهات ذكي لنواقص المخزون والمنتجات القريبة من الانتهاء ومستحقات العملاء والموردين\n• ✨ شاشة متكاملة لإدارة الأدوار والصلاحيات وربط واتساب المباشر من داخل إعدادات البرنامج\n• ✨ ربط المتجر الإلكتروني واستقبال طلبات العملاء أونلاين وتحويلها إلى فواتير بيع مباشرة\n• 🛠️ تحسين استقرار شاشات الإعدادات والمبيعات والمخزون والخزينة وتوحيد المظهر الفاتح والداكن",
+    "whats_new":  [
+                      "🎨 تطوير شاشة تسجيل الدخول والشاشة الرئيسية لتصبح أسرع وأكثر سلاسة وتناسقاً على جميع مقاسات الشاشات",
+                      "✨ تحسين نافذة عرض التحديثات الجديدة وتجربة متابعة الإشعارات والتنبيهات الفورية",
+                      "✨ تطوير شاشة الكاشير وفاتورة البيع لسرعة أكبر أثناء أوقات الزحام",
+                      "✨ نظام تنبيهات ذكي لنواقص المخزون والمنتجات القريبة من الانتهاء ومستحقات العملاء والموردين",
+                      "✨ شاشة متكاملة لإدارة الأدوار والصلاحيات وربط واتساب المباشر من داخل إعدادات البرنامج",
+                      "✨ ربط المتجر الإلكتروني واستقبال طلبات العملاء أونلاين وتحويلها إلى فواتير بيع مباشرة",
+                      "🛠️ تحسين استقرار شاشات الإعدادات والمبيعات والمخزون والخزينة وتوحيد المظهر الفاتح والداكن"
+                  ],
     "package":  {
-                    "type":  "differential_delta",
-                    "name":  "CashierMarket_Delta_v1.0.2.0_to_v1.0.2.1.zip",
-                    "url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.1/CashierMarket_Delta_v1.0.2.0_to_v1.0.2.1.zip",
-                    "sha256":  "8e4d3fd612a9cf4fe25a5adb9cf62ffc7bccf62e90c19f9e8dcb6f263620b898",
-                    "size":  117724192,
-                    "size_human":  "112.27 MB",
-                    "runner":  "apply_cashier_delta.bat",
-                    "install_strategy":  "stage_and_replace",
+                    "type":  "full_package",
+                    "name":  "package.zip",
+                    "url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/package.zip",
+                    "sha256":  "82550f4b41ab2a846b40b1b106bb1e4e82c657d2a0e949a0194dc7113b9030c6",
+                    "size":  118291890,
+                    "size_human":  "112.81 MB",
+                    "install_strategy":  "atomic_journal",
                     "requires_restart":  true
                 },
     "installer":  {
                       "type":  "full_setup",
-                      "name":  "CashierMarket_Setup_v1.0.2.1.exe",
-                      "url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.1/CashierMarket_Setup_v1.0.2.1.exe",
-                      "sha256":  "c83848dae015ea2ff5955b8d7b6ade80afa0a6ead9def6418b260d77a8d08b15",
-                      "size":  99167168,
-                      "size_human":  "94.57 MB",
-                      "silent_args":  "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-",
+                      "name":  "CashierMarket_Setup_v1.0.2.3.exe",
+                      "url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/CashierMarket_Setup_v1.0.2.3.exe",
+                      "sha256":  "86ae4df20d8e276b7d9ad79bcb1b39df56b0029419aebfd0d57870d41cf23678",
+                      "size":  99784464,
+                      "size_human":  "95.16 MB",
+                      "silent_args":  "/SILENT /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS",
                       "requires_admin":  true
                   },
-    "whats_new":  [
-                      "🎨 دعم الدقات العالية وتناسق الشاشات: تفعيل نظام التوافق المتقدم PerMonitorV2 لضمان وضوح فائق للخطوط والنوافذ على الشاشات عالية الدقة (125%/150%/200%) والشاشات المتعددة.",
-                      "⚡ المحرك التفاعلي للأبعاد والتمرير: تطوير محرك LayoutHelper للتجاوب التلقائي مع شاشات الكاشير المختلفة (1366x768 و 1024x768 وما فوق) ومنع خروج الأزرار خارج مجال الرؤية.",
-                      "🛠️ سياسات أمان الكاشير وحماية الفواتير: إضافة خيارات طلب صلاحيات المدير عند حذف صنف من الفاتورة أو إلغاء الفاتورة، ومنع بيع المنتجات منتهية الصلاحية.",
-                      "✨ إعدادات ميزان الباركود الإلكتروني: إمكانية تخصيص وتعيين بادئة باركود الميزان الإلكتروني ونوعه مباشرة من إعدادات النظام.",
-                      "🛡️ توقيع رقمي معتمد: توقيع كافة ملفات البرنامج والمثبت بشهادة رقمية رسمية معتمدة لمنع رسائل الحظر وتعزيز أمان التثبيت على أجهزة العملاء.",
-                      "💾 استقرار قواعد البيانات والنسخ الاحتياطي: تحسين الكشف التلقائي لمسار ملف الإعدادات وإضافة خيارات التنبيه للنسخ الاحتياطي عند إغلاق البرنامج."
-                  ],
+    "channels":  {
+                     "active_channel":  "stable",
+                     "default_channel":  "stable",
+                     "client_config_key":  "update_channel",
+                     "supported_channels":  [
+                                                "stable",
+                                                "beta",
+                                                "preview"
+                                            ],
+                     "directory":  {
+                                       "stable":  {
+                                                      "channel_id":  "stable",
+                                                      "name_ar":  "القناة المستقرة الرسمية",
+                                                      "name_en":  "Official Stable Channel",
+                                                      "is_recommended":  true,
+                                                      "latest_version":  "1.0.2.3",
+                                                      "release_tag":  "v1.0.2.3",
+                                                      "status":  "production-ready",
+                                                      "description_ar":  "النسخ الرسمية المستقرة والمجربة لجميع الأنشطة التجارية ونقاط البيع اليومية.",
+                                                      "description_en":  "Production-grade, highly tested releases recommended for daily operations.",
+                                                      "manifest_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/manifest.json",
+                                                      "package_download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/package.zip",
+                                                      "installer_download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/CashierMarket_Setup_v1.0.2.3.exe"
+                                                  },
+                                       "beta":  {
+                                                    "channel_id":  "beta",
+                                                    "name_ar":  "القناة التجريبية العامة",
+                                                    "name_en":  "Public Beta Channel",
+                                                    "is_recommended":  false,
+                                                    "latest_version":  "1.0.2.3",
+                                                    "release_tag":  "v1.0.2.3",
+                                                    "status":  "testing",
+                                                    "description_ar":  "نسخ تجريبية تتضمن المميزات الجديدة قبل اعتمادها رسمياً.",
+                                                    "description_en":  "Pre-release builds featuring upcoming tools for early testers.",
+                                                    "manifest_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/manifest.json",
+                                                    "package_download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/package.zip",
+                                                    "installer_download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/CashierMarket_Setup_v1.0.2.3.exe"
+                                                },
+                                       "preview":  {
+                                                       "channel_id":  "preview",
+                                                       "name_ar":  "قناة المعاينة والتطوير",
+                                                       "name_en":  "Developer Preview Channel",
+                                                       "is_recommended":  false,
+                                                       "latest_version":  "1.0.2.3",
+                                                       "release_tag":  "v1.0.2.3",
+                                                       "status":  "experimental",
+                                                       "description_ar":  "بناءات معاينة سريعة تتضمن تحديثات قيد التطوير المباشر.",
+                                                       "description_en":  "Experimental bleeding-edge builds for developers and QA engineers.",
+                                                       "manifest_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/manifest.json",
+                                                       "package_download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/package.zip",
+                                                       "installer_download_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/CashierMarket_Setup_v1.0.2.3.exe"
+                                                   }
+                                   }
+                 },
+    "application":  {
+                        "id":  "com.cashiermarket.pos",
+                        "name":  "Cashier Market POS \u0026 ERP",
+                        "edition":  "Professional POS \u0026 Retail ERP",
+                        "publisher":  "Ammar Ahmed Software Solutions",
+                        "main_executable":  "Cashier Market.exe",
+                        "website":  "https://github.com/ammar92006/CashierMarket-Releases"
+                    },
+    "compatibility":  {
+                          "os":  "Windows",
+                          "min_windows_build":  "10.0.10240",
+                          "architecture":  "x64",
+                          "dotnet_runtime":  ".NET Framework 4.8"
+                      },
     "distribution":  {
                          "github_repository":  "https://github.com/ammar92006/CashierMarket-Releases",
-                         "github_release_tag":  "v1.0.2.1",
-                         "manifest_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.1/manifest.json",
+                         "github_release_tag":  "v1.0.2.3",
+                         "manifest_url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/manifest.json",
                          "supabase_project_url":  "https://psxgumzygqfbqbwtweee.supabase.co",
                          "supabase_rpc_method":  "rpc_check_for_updates"
                      },
     "security":  {
                      "integrity_hash_algorithm":  "SHA-256",
                      "cloud_rpc_validation":  "rpc_check_for_updates",
-                     "signature_verification":  "enabled"
+                     "signature_verification":  "rsa-2048-pkcs1"
                  },
-    "signature":  "MbdNREBuUVIUtT3OA/4Wv8us3jQZMzg3/V+tl8aaMPwZwLVtL11eRF5MOpYUJp2fk8bLg8Dg2FY6oxTIykoaE0qVBeAeT9Wh9BrxwMqVRx2r2zpivVlagAiH7Ep0G13GDroh8sHSsPZKgCW6+iUrGlsn5lXtzCELuSxBueTzhLyBMclOlxoGvBqeQBSZBURyiiCaVYKzNL8+E8ABb5v6KDIUAzac7vW8Dkw2dOcGM31q9GWHT/mPLvVd7MMdNaRsBpUG7NJNvC/xI77/60d3lYl8DtkTLRcHKMZ7bHylzFF9MISrVHh6Bv1BnmkvP03mNCHlGv9rhutsD2kbjgXGtw=="
+    "delta":  {
+                  "type":  "cm-delta-v2",
+                  "name":  "delta.zip",
+                  "url":  "https://github.com/ammar92006/CashierMarket-Releases/releases/download/v1.0.2.3/delta.zip",
+                  "sha256":  "bc9e67ea7ebd93d6811dbe09bc2aff1f5c5252cdcd2a1a1edf06ead05e944588",
+                  "size":  8281,
+                  "size_human":  "0.01 MB",
+                  "base_version":  "1.0.2.2"
+              },
+    "signature":  "BioIbjS7Pz/EjcZN+7q3IV9zKTxGaOc4mzZc/GeodoMJnEmmk3cbIxLTlf7uOBVPWo6VNRhdNBsJU3FD4uyXbLG3lbyNqlb2CHIHm9jF8MCe901zfVcJcG+iguqggiZsSb8rqvB/fEJsLHssr9qn6xt6J5XR742nCRspeCt1QDsFptL7L28VddGf44mbunE5cRVsaYFcjzk+zcqpbRfgn7JNA+viu+bVAbiYzR4tdJdGkW0oJ1N7z2E4ckrKpdaTsvUkIDb1yR0TDCggGAmkt3MKOGcpQLDgk4tGrDNfzSbWxi83uvm5EQ/2YPdZgz8MqRh82uISHBFJwOJYDyYlug=="
 }
